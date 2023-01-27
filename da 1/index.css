@@ -49,7 +49,7 @@ chart img {
 }
 
 clothes img {
-    height: 300px;
+    width: 85vw;
 }
 
 week {
@@ -85,6 +85,25 @@ week .week-component .info .weather {
     position: absolute;
     right: 10px;
     color: #662E1C;
+}
+
+week .week-component .info .high,
+week .week-component .info .low {
+    display: none;
+}
+
+week .week-component+week .week-component .info .high {
+    font-size: 30px;
+    position: absolute;
+    right: 45%;
+    top: 30%;
+}
+
+week .week-component+week .week-component .info .low {
+    font-size: 28px;
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
 }
 
 week .week-component img {
