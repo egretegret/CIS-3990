@@ -1,16 +1,30 @@
+.Home {
+  padding: 5%;  
+}
+
 .Poem {
     display: flex;
     flex-direction: column;
+    background-color: #EAE4DD;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .Poem .action-bar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.Poem .closed {
-    height: 300px;
+.Poem.closed {
+    height: 200px;
+    text-overflow: ellipsis;
 }
 
 .Poem p {
+    height: 80%;
     text-overflow: ellipsis;
+    overflow: hidden;
 }

@@ -1,7 +1,7 @@
 export let poems = [
     {
         "title": "Catch",
-        "author": "Samiya Bashir",
+        "author": "SAMIYA BASHIR",
         "poem": "if this is a game then we have made it, unknowing, \n \
       to the final four. unlikely underdogs. spectators turned \n \
       to suspect sport. anti-athletes. out of shape beyond reason. \n \
