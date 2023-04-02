@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+.Poem .action-bar .button {
+    cursor: pointer;
+}
+
 .Poem.closed {
     height: 200px;
     text-overflow: ellipsis;
