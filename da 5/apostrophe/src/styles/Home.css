@@ -1,0 +1,16 @@
+.Poem {
+    display: flex;
+    flex-direction: column;
+}
+
+.Poem .action-bar {
+    display: flex;
+}
+
+.Poem .closed {
+    height: 300px;
+}
+
+.Poem p {
+    text-overflow: ellipsis;
+}
