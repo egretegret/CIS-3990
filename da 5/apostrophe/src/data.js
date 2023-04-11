@@ -253,3 +253,5 @@ export let friendsPoems = [
         yawn",
     }
 ];
+
+export let allPoems = [].concat(discoverPoems).concat(friendsPoems);

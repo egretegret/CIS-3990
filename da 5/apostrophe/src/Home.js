@@ -5,7 +5,7 @@ import { Poem } from './components/Poem';
 import { discoverPoems, friendsPoems } from './data';
 
 
-export function Home() {
+export default function Home() {
     const [active, setActive] = useState("discover");
 
     return (

@@ -1,5 +1,5 @@
 .Home {
-  padding: 5%;  
+    padding: 5%;
 }
 
 .Home .scroll-top {
@@ -8,6 +8,7 @@
     width: 100%;
     top: 0;
     background-color: #FDF9F5;
+    z-index: -1;
 }
 
 .Home .discover-friends {
@@ -27,7 +28,7 @@
     top: 75px;
 }
 
-.Home .divider-bottom {
+.Home .divider-bottom{
     height: 18px;
     background-color: #FDF9F5;
     position: sticky;
@@ -62,8 +63,45 @@
     text-overflow: ellipsis;
 }
 
-.Poem p {
+.Poem a {
     height: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.Home-poem {
+    padding: 5%;
+}
+
+.Home-poem h1 {
+    font-size: 24px;
+}
+
+.Home-poem .scroll-top {
+    position: fixed;
+    height: 10px;
+    width: 100%;
+    top: 0;
+    background-color: #FDF9F5;
+}
+
+.Home-poem .Home-poem-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    background-color: #FDF9F5;
+}
+
+.Home-poem .divider-bottom {
+    height: 10px;
+    background-color: #FDF9F5;
+    position: sticky;
+    top: 73px;
+}
+
+.Home-poem .tags {
+    margin-bottom: 30px;
 }
