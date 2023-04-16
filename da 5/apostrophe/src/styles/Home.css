@@ -28,7 +28,7 @@
     top: 75px;
 }
 
-.Home .divider-bottom{
+.Home .divider-bottom {
     height: 18px;
     background-color: #FDF9F5;
     position: sticky;
@@ -46,6 +46,7 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .Poem .action-bar {
@@ -67,6 +68,19 @@
     height: 80%;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.Poem .collections-dropdown.hide {
+    display: none;
+}
+
+.Poem .collections-dropdown {
+    position: absolute;
+    right: 0px;
+    bottom: -80px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    z-index: 1;
 }
 
 .Home-poem {

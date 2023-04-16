@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 
 import { Arrow } from './Arrow';
 import { Bookmark } from './Bookmark';
+import useLongPress from '../utility';
 
 export function Poem({ title, author, poem, closed = true }) {
     const [isClosed, setIsClosed] = useState(closed);
     const [isSaved, setIsSaved] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
     function toggleClose() {
         isClosed ? setIsClosed(false) : setIsClosed(true);
@@ -15,6 +17,18 @@ export function Poem({ title, author, poem, closed = true }) {
     function toggleSave() {
         isSaved ? setIsSaved(false) : setIsSaved(true);
     }
+
+    function onLongPress() {
+        console.log('longpress is triggered');
+        setDropdown(true);
+    };
+
+    const defaultOptions = {
+        shouldPreventDefault: true,
+        delay: 500,
+    };
+
+    const longPressEvent = useLongPress(onLongPress, toggleSave, defaultOptions);
 
     return (
         <div className={`Poem ${isClosed ? "closed" : ""}`}>
@@ -27,9 +41,14 @@ export function Poem({ title, author, poem, closed = true }) {
                 <div className="button" onClick={toggleClose} >
                     <Arrow open={!isClosed} />
                 </div>
-                <div className="button" onClick={toggleSave} >
+                <div className="button" {...longPressEvent} onMouseUp={() => setDropdown(false)}>
                     <Bookmark saved={isSaved} />
                 </div>
+            </div>
+            <div className={`collections-dropdown ${dropdown ? "" : "hide"}`}>
+                <h2>favs</h2>
+                <h2>cute</h2>
+                <h2>add new</h2>
             </div>
         </div>
     );
