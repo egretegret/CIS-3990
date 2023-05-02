@@ -21,6 +21,12 @@
     z-index: 2;
 }
 
+.Search .searchbar .search-icon {
+    position: absolute;
+    right: 7px;
+    top: 20%;
+}
+
 .Search input[type=text] {
     width: 97%;
     border: none;

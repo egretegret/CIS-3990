@@ -1,0 +1,70 @@
+.Create {
+    padding: 5%;
+}
+
+.Create .entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #A09486;
+    background-color: #FDF9F5;
+}
+
+.Create .entry .text-editor {
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #EAE4DD;
+}
+
+.Create .entry form {
+    width: 100%;
+}
+
+.Create .entry textarea.title {
+    display: flex;
+    width: 97%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #EAE4DD;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    color: #050517;;
+}
+
+.Create .entry textarea.entry {
+    width: 97%;
+    border: none;
+    border-radius: 5px;
+    height: 250px;
+    background-color: #EAE4DD;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    color: #050517;;
+}
+
+.Create .post-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    color: #050517;;
+}
+
+.Create .post-button.active {
+    background-color: #E29861;
+}
+
+.Create .post-button.inactive {
+    background-color: #F9F5F1;
+}

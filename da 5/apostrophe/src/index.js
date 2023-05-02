@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import './index.css';
+import Create from './Create';
 import Home from './Home';
 import HomePoem from './HomePoem';
 import Search from './Search';
@@ -26,10 +27,10 @@ const router = createBrowserRouter([
     path: "/search",
     element: <Search />,
   },
-  // {
-  //   path: "create",
-  //   element: <Create />,
-  // },
+  {
+    path: "create",
+    element: <Create />,
+  },
   // {
   //   path: "collections",
   //   element: <Collections />,
