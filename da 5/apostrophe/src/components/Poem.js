@@ -16,6 +16,7 @@ export function Poem({ title, author, poem, closed = true }) {
 
     function toggleSave() {
         isSaved ? setIsSaved(false) : setIsSaved(true);
+        dropdown ? setDropdown(false) : setDropdown(true);
     }
 
     function onLongPress() {
@@ -41,7 +42,7 @@ export function Poem({ title, author, poem, closed = true }) {
                 <div className="button" onClick={toggleClose} >
                     <Arrow open={!isClosed} />
                 </div>
-                <div className="button" {...longPressEvent} onMouseUp={() => setDropdown(false)}>
+                <div className="button" onClick={toggleSave}>
                     <Bookmark saved={isSaved} />
                 </div>
             </div>

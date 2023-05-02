@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './styles/Home.css'
 import { Poem } from './components/Poem';
+import Nav from './components/Nav';
 import { discoverPoems, friendsPoems } from './data';
 
 
@@ -25,6 +26,7 @@ export default function Home() {
                 friendsPoems.map(p => <Poem title={p.title}
                     author={p.author}
                     poem={p.poem} />)}
+            <Nav a="home"/>
         </div>
 
     );

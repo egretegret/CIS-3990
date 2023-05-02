@@ -8,6 +8,7 @@ import {
 import './index.css';
 import Home from './Home';
 import HomePoem from './HomePoem';
+import Search from './Search';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -21,10 +22,10 @@ const router = createBrowserRouter([
     path: "/poem/:poemId",
     element: <HomePoem />
   },
-  // {
-  //   path: "search",
-  //   element: <Search />,
-  // },
+  {
+    path: "/search",
+    element: <Search />,
+  },
   // {
   //   path: "create",
   //   element: <Create />,
