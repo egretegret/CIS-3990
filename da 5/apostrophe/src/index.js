@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 
 import './index.css';
+import Collection from './Collection';
+import Collections from './Collections';
 import Create from './Create';
 import Home from './Home';
 import HomePoem from './HomePoem';
@@ -31,10 +33,14 @@ const router = createBrowserRouter([
     path: "create",
     element: <Create />,
   },
-  // {
-  //   path: "collections",
-  //   element: <Collections />,
-  // },
+  {
+    path: "collections",
+    element: <Collections />,
+  },
+  {
+    path: "collections/:collectionId",
+    element: <Collection />,
+  },
   // {
   //   path: "profile",
   //   element: <Profile />,

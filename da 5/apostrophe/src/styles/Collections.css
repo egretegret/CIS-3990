@@ -1,0 +1,88 @@
+.Collections {
+    padding: 5%;
+}
+
+.Collections .collections-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.Collections .collections-box .collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Collections .collections-box .collection-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAE4DD;
+    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+}
+
+.Collections .collections-box .collection-box-link { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Collections .collections-box .collection-box .collection-poem {
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.Collections .collections-box .collection-box .collection-settings {
+    display: flex;
+    width: 30px;
+    justify-content: space-evenly;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.Collections .collections-box .collection-box .collection-settings .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #535353;
+}
+
+.Collections .collections-box .collection-box .collection-cross {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+}
+
+.Collections .collections-box .collection-box .collection-cross-vert {
+    width: 15px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+.Collections .collections-box .collection-box .collection-cross-hort {
+    width: 90px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    position: absolute;
+    top: 60px;
+    left: 24px;
+}

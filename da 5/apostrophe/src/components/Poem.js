@@ -5,9 +5,9 @@ import { Arrow } from './Arrow';
 import { Bookmark } from './Bookmark';
 import useLongPress from '../utility';
 
-export function Poem({ title, author, poem, closed = true }) {
+export function Poem({ title, author, poem, closed = true, saved = false }) {
     const [isClosed, setIsClosed] = useState(closed);
-    const [isSaved, setIsSaved] = useState(false);
+    const [isSaved, setIsSaved] = useState(saved);
     const [dropdown, setDropdown] = useState(false);
 
     function toggleClose() {

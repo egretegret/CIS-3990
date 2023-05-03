@@ -27,6 +27,13 @@ p {
   font-size: 14px;
 }
 
+p::selection {
+  background: #E29861; /* WebKit/Blink Browsers */
+}
+p::-moz-selection {
+  background: #E29861; /* Gecko Browsers */
+}
+
 body {
   background-color: #FDF9F5;
   color: #050517;

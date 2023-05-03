@@ -1,0 +1,31 @@
+.Collection {
+    padding: 5%;
+}
+
+.Collection .scroll-top {
+    position: fixed;
+    height: 10px;
+    width: 100%;
+    top: 0;
+    background-color: #FDF9F5;
+    z-index: 2;
+}
+
+.Collection .Collection-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    background-color: #FDF9F5;
+    z-index: 3;
+}
+
+.Collection .divider-bottom {
+    height: 10px;
+    background-color: #FDF9F5;
+    position: sticky;
+    top: 73px;
+    z-index: 2;
+}
