@@ -19,14 +19,16 @@ export default function Home() {
             </div>
             <div className="divider"></div>
             <div className="divider-bottom"></div>
-            {active == "discover" ?
-                discoverPoems.map(p => <Poem title={p.title}
-                    author={p.author}
-                    poem={p.poem} />) :
-                friendsPoems.map(p => <Poem title={p.title}
-                    author={p.author}
-                    poem={p.poem} />)}
-            <Nav a="home"/>
+            <div className="poems-container">
+                {active == "discover" ?
+                    discoverPoems.map(p => <Poem title={p.title}
+                        author={p.author}
+                        poem={p.poem} />) :
+                    friendsPoems.map(p => <Poem title={p.title}
+                        author={p.author}
+                        poem={p.poem} />)}
+            </div>
+            <Nav a="home" />
         </div>
 
     );

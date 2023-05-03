@@ -47,6 +47,11 @@
     color: #050517;
 }
 
+.Home .poems-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .Poem {
     display: flex;
     flex-direction: column;
@@ -89,6 +94,7 @@
     bottom: -80px;
     background-color: #D9D9D9;
     padding: 10px;
+    z-index: 5;
 }
 
 .Home-poem {
