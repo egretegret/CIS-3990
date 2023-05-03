@@ -2,6 +2,12 @@
     padding: 5%;
     padding-bottom: 60px;
     -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: #E29861;
+    white-space: pre;
+}
+
+.Home::selection {
+    background: #E29861;
 }
 
 .Home .scroll-top {

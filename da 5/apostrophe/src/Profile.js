@@ -4,13 +4,15 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './styles/Profile.css'
 import Nav from './components/Nav';
 import { Poem } from './components/Poem';
-import { friendsPoems } from './data';
+import { allPoems, personalPoem } from './data';
 
 export default function Profile() {
     const navigate = useNavigate();
     const { profileId } = useParams();
 
     const [following, setFollowing] = useState(false);
+
+    const authoredPoems = allPoems.concat(personalPoem).filter(e => e.author === profileId);
 
     return (
         <div className='Profile'>
@@ -33,7 +35,7 @@ export default function Profile() {
             <div className="divider"></div>
             <div className="divider-bottom"></div>
             <div className="poems">
-                {friendsPoems.map(p => <Poem title={p.title}
+                {authoredPoems.map(p => <Poem title={p.title}
                     author={p.author}
                     poem={p.poem} />)}
             </div>

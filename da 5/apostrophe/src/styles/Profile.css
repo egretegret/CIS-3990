@@ -1,5 +1,8 @@
 .Profile {
     padding: 5%;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: #E29861;
+    white-space: pre;
 }
 
 .Profile .scroll-top {
