@@ -1,0 +1,60 @@
+.Profile {
+    padding: 5%;
+}
+
+.Profile .scroll-top {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    background-color: #FDF9F5;
+    z-index: 2;
+}
+
+.Profile .Profile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    background-color: #FDF9F5;
+    z-index: 3;
+}
+
+.Profile .Profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    background-color: #FDF9F5;
+    z-index: 3;
+}
+
+.Profile .follow-button {
+    width: 42px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #EAE4DD;
+}
+
+.Profile .follow-button.following {
+    width: 62px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #E29861;
+}
+
+.Profile .divider-bottom {
+    height: 10px;
+    background-color: #FDF9F5;
+    position: sticky;
+    top: 73px;
+    z-index: 2;
+}
+
+.Profile .poems {
+    margin-top: 40px;
+}

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 import './styles/Home.css'
 import { Poem } from './components/Poem';
 import { allPoems } from './data';
 import { getPoem } from './utility';
-import { useNavigate, useParams } from 'react-router-dom';
 
 export default function HomePoem() {
     const navigate = useNavigate();
@@ -20,7 +20,9 @@ export default function HomePoem() {
                     navigate(-1);
                 }}></img>
                 <h1>{title}</h1>
+                <Link to={`/profile/` + author}>
                 <img src="https://img.icons8.com/material/96/user--v1.png" style={{ width: '42px', height: '42px' }}></img>
+                </Link>
             </div>
             <div className="scroll-top"></div>
             <div className="divider"></div>

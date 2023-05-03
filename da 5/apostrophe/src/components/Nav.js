@@ -27,7 +27,7 @@ export default function Nav({ a }) {
             <Link to={`/collections`}>
             <CollectionsIcon active={active === "collections"} setActive={setActive}/>
             </Link>
-            <Link to={`/profile`}>
+            <Link to={`/profile/malevolent_pinecone`}>
             <ProfileIcon active={active === "profile"} setActive={setActive}/>
             </Link>
         </div>

@@ -11,6 +11,7 @@ import Collections from './Collections';
 import Create from './Create';
 import Home from './Home';
 import HomePoem from './HomePoem';
+import Profile from './Profile';
 import Search from './Search';
 
 import reportWebVitals from './reportWebVitals';
@@ -41,10 +42,10 @@ const router = createBrowserRouter([
     path: "collections/:collectionId",
     element: <Collection />,
   },
-  // {
-  //   path: "profile",
-  //   element: <Profile />,
-  // },
+  {
+    path: "profile/:profileId",
+    element: <Profile />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
